@@ -24,7 +24,6 @@ body {
 @media screen and (max-width: 60rem) {
     body{
         font-size: 0.6rem;
-        height: 100vh;
     }
     body #dev {
         font-size: 0.8rem;
