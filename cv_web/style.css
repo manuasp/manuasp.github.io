@@ -24,6 +24,7 @@ body {
 @media screen and (max-width: 60rem) {
     body{
         font-size: 0.6rem;
+        height: 100vh;
     }
     body #dev {
         font-size: 0.8rem;
@@ -45,15 +46,21 @@ body {
     body #languages img {
         width: 1.5rem;
     }
-    body #imgadd img:hover {
-        transform:scale(2.25) scaleX(-1);
+    body #imgadd img {
+        transform:scale(2) scaleX(-1);
         margin: 2rem;
     }
+
+    body #imgadd img:hover {
+        transform:scale(3) scaleX(-1);
+        margin: 2rem;
+    }
+
     body #fontroues{
         position: absolute;
         height:100%;
         width: auto;
-        right: -80%
+        right: -80%;
     }
 }
 
