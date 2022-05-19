@@ -1,0 +1,444 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-primaire: #1B2021;
+    --color-secondaire: #D8CBC7;
+    --color-tertiaire: #C4B9B5 ;
+    --color-maybe: #51513D;
+    --abel: 'Abel', sans-serif;
+    --orbitron: 'Orbitron', sans-serif;
+    --rubik: 'Rubik Moonrocks', cursive, Arial, Helvetica, sans-serif;
+    };
+
+
+body {
+    font-size: 10px;
+}
+
+
+
+
+@media screen and (max-width: 60rem) {
+    body{
+        font-size: 0.6rem;
+    }
+    body #dev {
+        font-size: 1rem;
+    }
+    body #coordonnees {
+        margin: 0.3rem;
+    }
+    body .alinea {
+        text-indent: 0.3rem;
+    }
+    body #titre {
+        font-size: 0.6rem;
+        max-width: 90%;
+    }
+    body .cruci img{
+        width: 1rem;
+        margin: 6%;}
+
+    body #languages img {
+        width: 1.5rem;
+    }
+    body #imgadd img:hover {
+        transform:scale(2.25);
+        margin: 2rem;
+    }
+}
+
+
+
+
+#cv {
+    position: relative;
+    font-family: var(--abel);
+}
+
+
+/* partie latérale gauche */
+
+#infos {
+    position: absolute;
+    background-color: var(--color-secondaire);
+    width: 30%;
+    height: 100vh;
+    z-index: +1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+
+#dev{
+    position: absolute;
+    font-family: 'Rubik Moonrocks', cursive, Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    background-color: grey;
+    padding: 1rem 0;
+    
+}
+    
+
+#nom {
+    text-align: center;
+    width: 90%;
+    
+}
+#imgadd{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    /* margin: 2rem 0 2rem 0; */
+}
+
+#imgadd img {
+    width:38%;
+    
+}
+
+#imgadd img:hover {
+    transform:scale(2.25);
+    margin: 5rem;
+}
+
+#coordonnees {
+    margin: 2rem;
+}
+
+.coord {
+    display: flex;
+}
+
+.alinea {
+    text-indent: 1.4rem;
+}
+
+#cantainerLanguages{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    height: 10rem;
+    background-color: var(--color-tertiaire);
+    width: 80%;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 10px 5px 5px var(--color-maybe);
+
+}
+#languages{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+.cruci img{
+    width: 2rem;
+    margin: 2%;
+    z-index: +1;
+}
+
+.vc1{
+    position: absolute;
+    
+}
+
+.vc2{
+    position: absolute;
+    right: 0;
+}
+
+.vc3{
+    position: absolute;
+    bottom: 0;
+}
+
+.vc4{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.languages {
+    width: 6rem;
+    text-align: center;
+}
+
+#languages img {
+    width: 3rem;
+}
+
+#descr{
+    text-indent: 20px;
+    margin: 0 5% 1rem 5%;
+}
+
+/* partie principale */
+
+#contenu{
+    position: absolute;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+}
+
+#fontroues{
+    position: absolute;
+    height: 100%;
+    right: 0;
+}
+    
+
+#close{
+    width: 10px;
+}
+
+
+/* panneau competences  */
+#compBtn{
+    position: absolute;
+    background-color: var(--color-tertiaire);
+    left: 50%;
+    transform: translate(-50%);
+    transition: 1s;
+    top: 47vh;
+    padding: 1em;
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 1em;
+}
+
+#compBtn:hover {
+    background-color: var(--color-primaire);
+    color: var(--color-secondaire);
+}
+
+
+#comp{
+    width: 60%;
+    height: 100vh;
+    background-color: var(--color-tertiaire);
+    position: fixed;
+    right: -60%;
+    transition: 1s;
+    z-index: +2;
+    border-radius: 30px;
+}
+
+#comp h3{
+    margin:20px
+}
+
+#listescomp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 70%;
+    
+}
+
+
+#rouecomp img {
+    position: absolute;
+    width: 20%;
+    right: 0;
+    bottom: 30%;
+    transform: rotate(90deg);
+    z-index: +1;
+}
+.flexer{
+    margin: 4% 0 0 0;
+    width: 40%;
+}
+
+#travaux {
+    background-color: var(--color-secondaire);
+    height: 30%;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    border-radius: 30px;
+}
+
+#titretrav {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 1%;
+    width: 40%;
+    height: 40px;
+}
+
+#titre {
+    color: var(--color-secondaire);
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 300px;
+    text-align: center;
+}
+
+.fondmetal {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    border-radius: 30px;
+}
+
+#productions {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    bottom: 10%;
+    position: absolute;
+    height: 60%;
+}
+
+.flex {
+    text-align: center;
+    width: 30%;
+    
+}
+.flex img {
+    width: 50%;
+}
+
+#mm {
+    width: 30%;
+}
+
+
+/* panneau formation  */
+
+#formBtn{
+    position: absolute;
+    background-color: var(--color-tertiaire);
+    left: 50%;
+    transform: translate(-50%);
+    transition: 1s;
+    top: 35vh;
+    border: solid 1px black;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+#formBtn:hover {
+    background-color: var(--color-primaire);
+    color: var(--color-secondaire);
+}
+
+#form{
+    right: 0;
+    width: 70%;
+    height: 50vh;
+    background-color: var(--color-tertiaire);
+    top: -50vh;
+    position: fixed;
+    transition: 1s;
+    z-index: +2;
+    border-radius: 30px;
+}
+
+#formation {
+    height: 80%;
+    margin:5%; 
+
+}
+
+#form h3{
+    margin: 5% 5% 0 10%;
+}
+
+#form p{
+    margin: 1% 5% 0 5%;
+}
+
+#roueform img {
+    position: absolute;
+    width: 15%;
+    right: 0;
+    bottom: 0;
+    transform:  scaleY(-1);
+}
+
+
+/* partie experiences  */
+
+#expBtn{
+    position: absolute;
+    background-color: var(--color-tertiaire);
+    left: 50%;
+    transform: translate(-50%);
+    transition: 1s;
+    top: 60vh;
+    border: solid 1px black;
+    border-radius: 1em;
+    padding: 1em;
+    
+}
+
+#expBtn:hover {
+    background-color: var(--color-primaire);
+    color: var(--color-secondaire);
+}
+
+#exp{
+    right: 0;
+    width: 70%;
+    height: 80vh;
+    background-color: var(--color-tertiaire);
+    bottom: -80vh;
+    position: fixed;
+    transition: 1s;
+    z-index: +2;
+    border-radius: 30px;
+}
+
+/* #roueexp {
+    position: absolute;
+    
+    right: 0;
+} */
+
+#roueexp img{
+    position: absolute;
+    right: 0;
+    width: 15%;
+}
+
+#exp table{
+    margin: 5%;
+    font-size: 90%;
+    height: 80%;
+}
+
+li{
+    list-style-type: none;
+}
+
+td h3{
+    text-align: center;
+}
