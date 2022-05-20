@@ -6,7 +6,7 @@ compBtn.onclick = function () {
         comp.style.right = "0"
         compBtn.style.left = "10%"
         // pourquoi ca ne marche pas avec "right= "60%"? "
-        compBtn.innerHTML = `<img id="close" src="images/blackclose.png" alt="">`
+        compBtn.innerHTML = `<img class="close" src="images/blackclose.png" alt="">`
      
  // roues dentée 
  document.getElementById('rouecomp').innerHTML = `<img src="images/roues2.gif" alt="">`;
@@ -38,7 +38,7 @@ formBtn.onclick = function () {
     if (form.style.top == "-50vh") {
         form.style.top = "30vh"
         formBtn.style.top = "85vh"
-        formBtn.innerHTML = `<img id="close" src="images/blackclose.png" alt="">`
+        formBtn.innerHTML = `<img class="close" src="images/blackclose.png" alt="">`
 
          // roues dentée 
  document.getElementById('roueform').innerHTML = `<img src="images/roues2.gif" alt="">`;
@@ -68,7 +68,7 @@ expBtn.onclick = function () {
         exp.style.bottom = "0" 
         expBtn.style.top = "12vh"
         // pourquoi je ne peux pas faire "bottom = "80vh"? 
-        expBtn.innerHTML = `<img id="close" src="images/blackclose.png" alt="">`
+        expBtn.innerHTML = `<img class="close" src="images/blackclose.png" alt="">`
 
 
  // roues dentée 

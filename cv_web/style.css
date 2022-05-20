@@ -235,16 +235,16 @@ body {
 }
     
 
-#close{
+.close{
     width: 10px;
 }
+
 
 
 /* panneau competences  */
 #compBtn{
     position: absolute;
     background-color: var(--color-tertiaire);
-    left: 50%;
     transform: translate(-50%);
     transition: 1s;
     top: 47vh;
@@ -255,8 +255,11 @@ body {
 }
 
 #compBtn:hover {
-    background-color: var(--color-primaire);
-    color: var(--color-secondaire);
+    /* background-color: var(--color-primaire);
+    color: var(--color-secondaire); */
+    cursor: pointer;
+    border: solid 1px var(--color-secondaire);
+    filter: invert(1);
 }
 
 
@@ -265,7 +268,7 @@ body {
     height: 100vh;
     background-color: var(--color-tertiaire);
     position: fixed;
-    right: -60%;
+    
     transition: 1s;
     z-index: +2;
     border-radius: 30px;
@@ -353,6 +356,10 @@ body {
     width: 50%;
 }
 
+.flex:hover{
+    transform:scale(1.25)
+}
+
 #mm {
     width: 30%;
 }
@@ -366,15 +373,17 @@ body {
     left: 50%;
     transform: translate(-50%);
     transition: 1s;
-    top: 35vh;
     border: solid 1px black;
     border-radius: 1em;
     padding: 1em;
 }
 
 #formBtn:hover {
-    background-color: var(--color-primaire);
-    color: var(--color-secondaire);
+    /* background-color: var(--color-primaire);
+    color: var(--color-secondaire); */
+    cursor: pointer;
+    border: solid 1px var(--color-secondaire);
+    filter: invert(1);
 }
 
 #form{
@@ -382,7 +391,7 @@ body {
     width: 70%;
     height: 50vh;
     background-color: var(--color-tertiaire);
-    top: -50vh;
+    
     position: fixed;
     transition: 1s;
     z-index: +2;
@@ -420,7 +429,7 @@ body {
     left: 50%;
     transform: translate(-50%);
     transition: 1s;
-    top: 60vh;
+
     border: solid 1px black;
     border-radius: 1em;
     padding: 1em;
@@ -428,8 +437,11 @@ body {
 }
 
 #expBtn:hover {
-    background-color: var(--color-primaire);
-    color: var(--color-secondaire);
+    /* background-color: var(--color-primaire);
+    color: var(--color-secondaire); */
+    cursor: pointer;
+    border: solid 1px var(--color-secondaire);
+    filter: invert(1);
 }
 
 #exp{
@@ -437,7 +449,6 @@ body {
     width: 70%;
     height: 80vh;
     background-color: var(--color-tertiaire);
-    bottom: -80vh;
     position: fixed;
     transition: 1s;
     z-index: +2;
